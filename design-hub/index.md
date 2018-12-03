@@ -4,3 +4,17 @@
 
 layout: home
 ---
+
+<div class="container-cards">
+  {% for post in site.posts reversed %}
+  <a href="{{ post.url }}" class="{{ post.paddingtype }}">
+  	<div class="post-card">
+  		<img src="{{site.baseurl}}/assets/img/{{ post.image }}">
+  		<div class="card-content">
+    		<h2>{{ post.title }}</h2>
+    		<h3>{{ post.subtitle }}</h3>
+    	</div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
