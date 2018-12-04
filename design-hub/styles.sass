@@ -19,6 +19,7 @@ $title: 34px
 $headline: 24px
 $subheading: 16px
 $body1: 14px
+$body2: 16px
 $none: 0
 $max: 1032px
 $medium: 672px
@@ -29,7 +30,7 @@ $medium-weight: 400
 
 // shadows
 $card-shadow: 0px 0px 30px 0px rgba(212, 212, 246, 0.6)
-$card-shadow-hover: -1px 10px 29px 0px rgba(212, 212, 246, 1)
+$card-shadow-hover: -1px 1px 40px 0px rgba(232, 232, 253, 1)
 
 
 *
@@ -76,6 +77,11 @@ p
 
 .container-header
 	padding: 4em 0 2em 0
+
+	a
+		margin-bottom: 1em
+		font-size: $body1
+		display: block
 
 .container-cards
 	width: 100%
@@ -135,3 +141,18 @@ p
 
 	a
 		color: $main-blue
+
+.container-content
+	p
+		font-size: $body2
+		line-height: 26px
+		color: $low-emphasys
+		margin-bottom: 2em
+
+	h2
+		color: $main-blue
+
+	@media screen and (max-width: $break-small)
+		img
+			width: 100%
+			height: auto

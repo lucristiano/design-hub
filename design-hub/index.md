@@ -6,7 +6,7 @@ layout: home
 ---
 <div class="container">  
   <div class="container-header">
-    <h1>Product Design Team @ <a href="https://quintoandar.com.br">QuintoAndar</a></h1>
+    <h1>Product Design Team @ QuintoAndar</h1>
     <h3>Uma frase bem maneira sobre o que é o hubzão e pra que serve.</h3>
   </div>
   <div class="container-cards">
