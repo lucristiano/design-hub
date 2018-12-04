@@ -3,12 +3,16 @@
 // general
 $font: Open Sans, sans-sefif
 
+// media querys
+$break-small: 600px
+$break-large: 1100px
+
 // colors
 $high-emphasys: rgba(0,0,0,87)
 $low-emphasys: rgba(0,0,0,54)
 $background: #F4F4F7
 
-//sizes
+// sizes
 $title: 34px
 $headline: 24px
 $subheading: 16px
@@ -16,18 +20,24 @@ $body1: 14px
 $none: 0
 $max: 1032px
 
-* 
+// shadows
+$card-shadow: 0px 0px 30px 0px rgba(212, 212, 246, 0.4)
+$card-shadow-hover: -1px 10px 29px 0px rgba(212, 212, 246, 0.8)
+
+
+*
 	box-sizing: border-box
 
-body 
+body
 	font-family: $font
 	color: $high-emphasys
+	background-color: $background
 
 a
 	color: $high-emphasys
 	text-decoration: none
 
-h1 
+h1
 	font-size: $title
 	margin: $none
 
@@ -40,7 +50,14 @@ h3
 	font-size: $subheading
 	margin: $none
 	font-weight: 400
+	margin-top: 8px
 
+
+.container
+	width: 100%
+	max-width: $max
+	padding: 4em 0
+	margin: 0 auto
 
 .container-cards
 	width: 100%
@@ -49,18 +66,24 @@ h3
 	column-count: 3
 	column-gap: 16px
 
+	@media screen and (max-width: $break-large)
+		column-count: 2
+
+	@media screen and (max-width: $break-small)
+		column-count: 1
+
 	a
 		display: inline-block
 		width: 100%
 		max-width: 328px
-		margin: 16px
+		margin: 16px 0
 		border-radius: 4px
-		box-shadow: 0px 0px 30px 0px rgba(233, 233, 253, 1)
+		box-shadow: $card-shadow
+		transition: .3s ease all
 
 		&:hover
 			cursor: hands
-			opacity: .3
-			transition: .3s ease all
+			box-shadow: $card-shadow-hover
 			pointer-events: auto
 
 	.card-content
@@ -70,7 +93,7 @@ h3
 	.hero
 		padding: 0
 
-		.card-content 
+		.card-content
 			padding: 16px 24px
 
 			img

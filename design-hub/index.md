@@ -4,7 +4,10 @@
 
 layout: home
 ---
-
+<div class="container">  
+  <h1>Product Design Team @ Quintoandar</h1>
+  <h3>Uma frase bem maneira sobre o que é o hubzão e pra que serve.</h3>
+</div>
 <div class="container-cards">
   {% for post in site.posts reversed %}
   <a href="{{ post.url }}" class="{{ post.paddingtype }}">
