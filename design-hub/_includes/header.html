@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content"width=device-width, initial-scale=1.0">
+    <title>Design Hub</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="{{site.baseurl}}/styles.css">
+  </head>
+  <body>
+
+    <nav>
+      <a href="{{ site.url }}"><img src="{{ site.url }}/assets/img/logo.svg"></a>
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle"/>
+
+      <div class="menu">
+        <div class="menu-title">
+          <a href="{{ site.url }}"><span>Product Design</span></a>
+          <a href="{{ site.url }}">QuintoAndar</a>
+        </div>
+        {% include navigation.html %}
+      </div>
+    </nav>
