@@ -169,6 +169,7 @@ nav
 	text-align: center
 	height: 100vh
 	position: fixed
+	overflow: hidden
 
 	img 
 		display: block
@@ -178,13 +179,13 @@ nav
 .menu
 	margin-top: -69px
 	text-align: center
-	display: none
+	max-width: 0
 	background: $off-menu
-	width: auto
 	float: left
-	overflow-y: scroll
+	overflow-y: hidden
 	height: 100vh
 	box-shadow: 1000px 40px 0px 1000px rgba(0,0,0,0.32)
+	transition: max-width 0.45s
 
 	a
 		span
@@ -234,5 +235,5 @@ label
 	display: none
 	
 	&:checked + .menu
-		display: block
-
+		max-width: 500px
+		overflow-y: scroll

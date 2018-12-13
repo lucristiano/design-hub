@@ -10,5 +10,4 @@ $(document).ready(function(){
         $(this).attr('src', '{{ site.url }}/../assets/img/nav.svg');
         }
     });
-
 });
