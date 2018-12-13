@@ -185,7 +185,7 @@ nav
 	overflow-y: hidden
 	height: 100vh
 	box-shadow: 1000px 40px 0px 1000px rgba(0,0,0,0.32)
-	transition: max-width 0.45s
+	transition: .3s ease all
 
 	a
 		span
@@ -197,6 +197,7 @@ nav
 		padding: 20px 30px
 		color: red
 		margin: 0
+		transition: .3s ease all
 		&:hover 
 			background: $main-blue
 			li a
@@ -230,6 +231,11 @@ label
 	width: 60px
 	float: left
 	text-align: center
+	opacity: 1
+	transition: .3s ease all
+
+	&:hover
+		opacity: 0.4
 
 #toggle
 	display: none

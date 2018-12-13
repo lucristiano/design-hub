@@ -5,9 +5,9 @@ $(document).ready(function(){
         open = !open;
         
         if(open) {
-        $(this).attr('src', '{{ site.url }}/../assets/img/nav-close.svg');
+        $(this).attr('src', '/assets/img/nav-close.svg');
         } else {
-        $(this).attr('src', '{{ site.url }}/../assets/img/nav.svg');
+        $(this).attr('src', '/assets/img/nav.svg');
         }
     });
 });
