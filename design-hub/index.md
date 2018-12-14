@@ -11,15 +11,27 @@ layout: home
   </div>
   <div class="container-cards">
     {% for post in site.posts reversed %}
-    <a href="{{ post.url }}" class="{{ post.paddingtype }}">
-    	<div class="post-card">
-    		<img src="{{site.baseurl}}/assets/img/{{ post.image }}">
-    		<div class="card-content">
-      		<h2>{{ post.title }}</h2>
-      		<h3>{{ post.subtitle }}</h3>
-      	</div>
-      </div>
-    </a>
+      {% if post.external_url %}
+        <a href="{{ post.external_url }}" class="{{ post.paddingtype }}" target="_blank">
+          <div class="post-card">
+            <img src="{{site.baseurl}}/assets/img/{{ post.image }}">
+            <div class="card-content">
+              <h2>{{ post.title }}</h2>
+              <h3>{{ post.subtitle }}</h3>
+            </div>
+          </div>
+        </a>
+      {% else %}
+      <a href="{{ post.url }}" class="{{ post.paddingtype }}">
+      	<div class="post-card">
+      		<img src="{{site.baseurl}}/assets/img/{{ post.image }}">
+      		<div class="card-content">
+        		<h2>{{ post.title }}</h2>
+        		<h3>{{ post.subtitle }}</h3>
+        	</div>
+        </div>
+      </a>
+      {% endif %}
     {% endfor %}
   </div>
 </div>
