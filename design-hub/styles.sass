@@ -5,7 +5,7 @@ $font: Open Sans, sans-sefif
 
 // media querys
 $break-small: 700px
-$break-large: 1100px
+$break-large: 1200px
 
 // colors
 $high-emphasys: rgba(0,0,0,87)
@@ -26,13 +26,14 @@ $none: 0
 $max: 1032px
 $medium: 672px
 $small: 328px
+$responsive-padding: 20%
 
 // weights
 $medium-weight: 400
 
 // shadows
-$card-shadow: 0px 0px 30px 0px rgba(212, 212, 246, 0.6)
-$card-shadow-hover: -1px 1px 40px 0px rgba(232, 232, 253, 1)
+$card-shadow: 0px 0px 30px 0px rgba(212, 212, 246, 0.5)
+$card-shadow-hover: 0px 0px 30px 0px rgba(232, 232, 253, 1)
 
 
 *
@@ -76,6 +77,7 @@ p
 
 	@media screen and (max-width: $break-large)
 		max-width: $medium
+		padding-left: $responsive-padding
 
 	@media screen and (max-width: $break-small)
 		max-width: $small
@@ -93,7 +95,7 @@ p
 	max-width: $max
 	margin: 0 auto
 	column-count: 3
-	column-gap: 16px
+	column-gap: 24px
 
 	@media screen and (max-width: $break-large)
 		column-count: 2
@@ -104,18 +106,21 @@ p
 	a
 		display: inline-block
 		width: 100%
-		max-width: 328px
 		margin: 16px 0
 		border-radius: 4px
 		box-shadow: $card-shadow
 		transition: .3s ease all
+
+		@media not all and (min-resolution:.001dpcm)
+			&:first-child
+				margin-top: 40px
 
 		&:hover
 			cursor: hands
 			box-shadow: $card-shadow-hover
 			pointer-events: auto
 
-	.card-content
+	.card-content		
 		h3
 			margin-top: 8px
 
@@ -132,6 +137,11 @@ p
 	.icon
 		padding: 24px
 
+.post-card
+	img
+		@media screen and (max-width: $break-large)
+			max-width: 100%
+
 .container-footer
 	max-width: $max
 	border-top: 1px solid rgba(0,0,0, .12)
@@ -140,6 +150,7 @@ p
 
 	@media screen and (max-width: $break-large)
 		max-width: $medium
+		margin-left: $responsive-padding
 
 	@media screen and (max-width: $break-small)
 		max-width: $small
@@ -184,8 +195,9 @@ nav
 	float: left
 	overflow-y: hidden
 	height: 100vh
-	box-shadow: 1000px 40px 0px 1000px rgba(0,0,0,0.32)
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75)
 	transition: .3s ease all
+	z-index: 1
 
 	a
 		span
@@ -241,5 +253,5 @@ label
 	display: none
 	
 	&:checked + .menu
-		max-width: 500px
+		max-width: 700px
 		overflow-y: scroll
