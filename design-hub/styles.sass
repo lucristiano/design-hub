@@ -8,18 +8,22 @@ $break-small: 700px
 $break-large: 1200px
 
 // colors
-$high-emphasys: rgba(0,0,0,87)
-$low-emphasys: rgba(0,0,0,54)
-$background: #F4F4F7
+$high-emphasys: rgba(4,11,56,87)
+$low-emphasys: rgba(4,11,56,57)
+$w-low-emphasys: rgba(255,255,255,57)
+$background: #F2F2F7
 $color-line: rgba(0,0,0,12)
 $main-blue: #5063F0
 $white: #FFFFFF
 $off-menu: #FAFAFA
 
+// spacing
+$sp-medium: 16px
+
 // sizes
-$title: 34px
-$headline: 24px
-$subheading: 16px
+$title: 56px
+$headline: 40px
+$subheading: 24px
 $body1: 14px
 $body2: 16px
 $none: 0
@@ -32,8 +36,8 @@ $responsive-padding: 20%
 $medium-weight: 400
 
 // shadows
-$card-shadow: 0px 0px 30px 0px rgba(212, 212, 246, 0.5)
-$card-shadow-hover: 0px 0px 30px 0px rgba(232, 232, 253, 1)
+$card-shadow: 6px 10px 9px 0px rgba(233, 233, 253, 0.72)
+$card-shadow-hover: none
 
 
 *
@@ -44,7 +48,6 @@ body, html
 	color: $high-emphasys
 	background-color: $background
 	width: 100%
-	height: 100%
 	margin: 0
 
 a
@@ -59,15 +62,17 @@ h2
 	font-size: $headline
 	margin: $none
 	font-weight: $medium-weight
+	color: $high-emphasys
 
 h3
 	font-size: $subheading
 	margin: $none
 	font-weight: $medium-weight
 	margin-top: 8px
+	color: $high-emphasys
 
 p
-	font-size: $body1
+	font-size: $body2
 	color: $low-emphasys
 
 .container
@@ -107,9 +112,11 @@ p
 		display: inline-block
 		width: 100%
 		margin: 16px 0
-		border-radius: 4px
+		border-radius: 20px
 		box-shadow: $card-shadow
 		transition: .3s ease all
+		background-color: $white
+		overflow: hidden
 
 		@media not all and (min-resolution:.001dpcm)
 			&:first-child
@@ -130,15 +137,17 @@ p
 		.card-content
 			padding: 16px 24px
 
-			img
-				width: 100%
-				height: auto
+		img
+			width: 100%
+			height: auto
+			margin: 0
 
 	.icon
 		padding: 24px
 
 .post-card
 	img
+		margin-bottom: $sp-medium
 		@media screen and (max-width: $break-large)
 			max-width: 100%
 
@@ -164,13 +173,6 @@ p
 		line-height: 26px
 		color: $low-emphasys
 		margin-bottom: 2em
-
-	h2
-		color: $main-blue
-
-	h3
-		color: $low-emphasys
-		font-weight: bold
 
 	a
 		color: $main-blue
@@ -206,40 +208,55 @@ nav
 	transition: .3s ease all
 	z-index: 1
 
+	.menu-title
+		margin-bottom: 20px
+
 	a
+		padding: 20px 30px
+		display: block
+
 		span
 			font-size: $body2
 			font-weight: 600
 	ul
 		list-style-type: none
 		text-align: left
-		padding: 20px 30px
-		color: red
 		margin: 0
+		padding: 0
 		transition: .3s ease all
+
 		&:hover
 			background: $main-blue
-			li a
+
+			li
+				color: $w-low-emphasys
+
+			li span
 				color: $white
-			li a span
-				color: $white
-		li a
-			font-size: 14px
-			color: rgba(0, 0, 0, 0.54)
+
+		li 
+			font-size: $body1
+			color: $low-emphasys
 			line-height: 24px
+
 			span
 				font-size: 16px
 				font-weight: 600
-				color: black
+				color: $high-emphasys
 
 	&-title
-		padding: 15px 0 20px 30px
 		a
 			text-decoration: none
 			display: block
 			text-align: left
 			color: $main-blue
 			font-size: $body1
+			margin-left: 30px
+			padding: 0
+
+			&:first-child
+				margin-top: 20px
+
 
 label
 	margin: 0
@@ -262,3 +279,19 @@ label
 	&:checked + .menu
 		max-width: 700px
 		overflow-y: scroll
+
+
+.ico-container
+	display: flex
+	justify-content: space-between
+	margin-bottom: $sp-medium
+	align-items: center
+
+.post
+	background-color: $white
+
+	.container
+		max-width: 700px
+
+	nav
+		background: $main-blue

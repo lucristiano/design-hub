@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "Pesquisa com usuário"
-menutitle: "Pesquisa com usuário"
+menutitle: "Pesquisa"
 date:   2018-11-27 17:31:15 -0200
 categories: pesquisa usuário
 subtitle: "Instruções para começar, templates, controle de convidados, recompensas e nosso Site Pesquinta."
 image: "pesquinta.png"
 paddingtype: "icon"
+menusubitems: "Instruções para começar<br>Template<br>Controle de convidados<br>Recompensas<br>Site Pesquinta"
 
 ---
 

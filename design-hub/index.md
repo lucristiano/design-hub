@@ -14,10 +14,13 @@ layout: home
       {% if post.external_url %}
         <a href="{{ post.external_url }}" class="{{ post.paddingtype }}" target="_blank">
           <div class="post-card">
-            <img src="{{site.baseurl}}/assets/img/{{ post.image }}">
+            <div class="ico-container">
+              <img src="{{site.baseurl}}/assets/img/{{ post.image }}">
+              <img src="{{site.baseurl}}/assets/img/external.svg">
+            </div>
             <div class="card-content">
-              <h2>{{ post.title }}</h2>
-              <h3>{{ post.subtitle }}</h3>
+              <h3>{{ post.title }}</h3>
+              <p>{{ post.subtitle }}</p>
             </div>
           </div>
         </a>
@@ -26,8 +29,8 @@ layout: home
       	<div class="post-card">
       		<img src="{{site.baseurl}}/assets/img/{{ post.image }}">
       		<div class="card-content">
-        		<h2>{{ post.title }}</h2>
-        		<h3>{{ post.subtitle }}</h3>
+        		<h3>{{ post.title }}</h3>
+        		<p>{{ post.subtitle }}</p>
         	</div>
         </div>
       </a>

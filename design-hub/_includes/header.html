@@ -7,12 +7,18 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="{{site.baseurl}}/styles.css">
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
+  <body id="{{ page.layout }}" class="{{ page.slug }} {{ page.layout }}">
 
     <nav>
-      <a href="{{ site.url }}"><img src="{{ site.url }}/assets/img/logo.svg"></a>
-      <label for="toggle"><img src="{{ site.url }}/assets/img/nav.svg" class="nav-icon"></label>
+      {% if page.layout == 'post' %}
+        <a href="{{ site.url }}"><img src="{{ site.url }}/assets/img/logowhite.svg"></a>
+        <label for="toggle"><img src="{{ site.url }}/assets/img/navwhite.svg" class="nav-icon"></label>
+      {% else %}
+        <a href="{{ site.url }}"><img src="{{ site.url }}/assets/img/logo.svg"></a>
+        <label for="toggle"><img src="{{ site.url }}/assets/img/nav.svg" class="nav-icon"></label>
+      {% endif %}
       <input type="checkbox" id="toggle"/>
 
       <div class="menu">
