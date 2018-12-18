@@ -10,20 +10,40 @@ menusubitems: "Senhas<br>Abstract<br>InVision<br>Sketch"
 
 ---
 
-## G Suite
+Essas são as principais ferramentas do nosso dia a dia da equipe. Confira também nosso [repositório de senhas](https://docs.google.com/spreadsheets/d/1-zkx4eawy1QNBzVyyCHCTqvFMlkes-DErpvdJ_8EHig/edit?usp=sharing)
+
+## Ferramentas básicas
+
+### G Suite
 
 Usamos Gmail, Drive, Calendar, Hangouts e tudo mais que exista na G Suite, do Google. Todos os produtos são integrados e já com todos os contatos do QuintoAndar. Outras áreas do 5A (como operações e CX) costumam usar o Hangouts como ferramenta de comunicação.
 
-## Senhas
-Temos um [repositório de senhas aqui](https://docs.google.com/spreadsheets/d/1-zkx4eawy1QNBzVyyCHCTqvFMlkes-DErpvdJ_8EHig/edit?usp=sharing).
-
-## [Slack](https://slack.com/)
+### [Slack](https://slack.com/)
 
 Nós de produto costumamos usar o Slack como ferramenta de comunicação interna. Lá, existem os canais dos projetos/squads e também outros para você conhecer o pessoal. Peça acesso em <http://quintoandar.slack.com>.
 
-## [Workplace](https://quintoandar.facebook.com/)
+### [Workplace](https://quintoandar.facebook.com/)
 
-Nós de produto costumamos usar o Slack como ferramenta de comunicação interna. Lá, existem os canais dos projetos/squads e também outros para você conhecer o pessoal. Peça acesso em http://quintoandar.slack.com.
+É nosso "Facebook da firma". Toda a interação entre colaboradores rola aqui - avisos gerais, apresentação de novos colaboradores, report de bugs, feedbacks de clientes, coisas engraçadas (ou não), etc.
+
+## [Sketch](https://www.sketchapp.com/)
+Nossa ferramenta onipresente de design: criação de wireframes, fluxos, telas e tudo mais.
+: 👉🏻	Para aprender: [Sketch Together](https://www.youtube.com/channel/UCZHkx_OyRXHb1D3XTqOidRw) e [Sketch App Tutorials](https://www.youtube.com/playlist?list=PLLnpHn493BHE6UIsdKYlS5zu-ZYvx22CS)
+: 👉🏻	Para baixar resources: [Sketch App Sources](https://www.sketchappsources.com/)
+: 👉🏻	Para instalar plugins e muito mais: [Sketch Runner](https://sketchrunner.com/)
+
+### Plugins Starter Pack
+
+Recomendamos alguns plugins para ajudar a deixar nosso fluxo mais rápido :)
+
+[Sketch Palettes](https://github.com/andrewfiorillo/sketch-palettes)\\
+Para usar nossa paleta de cores no Sketch, o ideal é importar [esse arquivo](https://drive.google.com/open?id=1LDntFXzEwuBfFL0msKp51_H2ODWEmK_p) para o "Global Colors" do seu Sketch e você terá nossa paletinha linda pronta pra você usar sempre em qualquer arquivo.
+
+[Sketch Relabel Button](https://github.com/kenmoore/sketch-relabel-button)\\
+Trabalhar com botões e labels no Sketch e manter as margens padronizadas pode ser bem chatinho. Esse plugin nos ajuda a renomear esses elementos sem perder essas especificações. É só selecionar o grupo, e alterar o label com CMD+J e o botão vai estar lindo, redimensionado com o novo label. *Atenção: é obrigatório usar esse plugin para que componentes que estão na library do Cozy funcionem corretamente.*
+
+[Craft by Invision](https://www.invisionapp.com/craft)\\
+Plugin oficial do Invision para o Sketch, tem um monte de features interessantes como placeholder de dados, step and repeat mas a que mais utilizamos é o sync de telas no Invision diretamente do Sketch.
 
 ## [Abstract](https://www.goabstract.com/)
 
@@ -53,22 +73,6 @@ Porém, quando for comentar em algum protótipo (em alguns squads é comum usar 
 
 Também seguimos alguns padrões de nomenclaturas de projetos no InVision, [veja mais aqui](https://docs.google.com/presentation/d/13DV5MgpTLY7iCgEgbdMAJDDFxoUwQNnCwntYINCyQ6s/edit#slide=id.g3b3d14a50b_0_30).
 
-## [Sketch](https://www.sketchapp.com/)
-Nossa ferramenta onipresente de design: criação de wireframes, fluxos, telas e tudo mais.
-: 👉🏻	Para aprender: [Sketch Together](https://www.youtube.com/channel/UCZHkx_OyRXHb1D3XTqOidRw) e [Sketch App Tutorials](https://www.youtube.com/playlist?list=PLLnpHn493BHE6UIsdKYlS5zu-ZYvx22CS)
-: 👉🏻	Para baixar resources: [Sketch App Sources](https://www.sketchappsources.com/)
-: 👉🏻	Para instalar plugins e muito mais: [Sketch Runner](https://sketchrunner.com/)
+### [InVision](https://www.invisionapp.com/) + [Craft](https://www.invisionapp.com/craft)
+Ferramenta colaborativa para prototipação de telas. Utilizando o Craft (plugin) para subir suas telas os desenvolvedores também conseguem acessar as especificações de design pelo Inspect. Também é possível que alguns squads utilizem os comentários para feedback e validação. Confira algumas boas práticas abaixo.
 
-
-### Plugins Starter Pack
-
-Recomendamos alguns plugins para ajudar a deixar nosso fluxo mais rápido :)
-
-[Sketch Palettes](https://github.com/andrewfiorillo/sketch-palettes)\\
-Para usar nossa paleta de cores no Sketch, o ideal é importar [esse arquivo](https://drive.google.com/open?id=1LDntFXzEwuBfFL0msKp51_H2ODWEmK_p) para o "Global Colors" do seu Sketch e você terá nossa paletinha linda pronta pra você usar sempre em qualquer arquivo.
-
-[Sketch Relabel Button](https://github.com/kenmoore/sketch-relabel-button)\\
-Trabalhar com botões e labels no Sketch e manter as margens padronizadas pode ser bem chatinho. Esse plugin nos ajuda a renomear esses elementos sem perder essas especificações. É só selecionar o grupo, e alterar o label com CMD+J e o botão vai estar lindo, redimensionado com o novo label. *Atenção: é obrigatório usar esse plugin para que componentes que estão na library do Cozy funcionem corretamente.*
-
-[Craft by Invision](https://www.invisionapp.com/craft)\\
-Plugin oficial do Invision para o Sketch, tem um monte de features interessantes como placeholder de dados, step and repeat mas a que mais utilizamos é o sync de telas no Invision diretamente do Sketch.

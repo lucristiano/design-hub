@@ -5,7 +5,7 @@
       <a href="{{site.baseurl}}/">Voltar</a>
       {% if page.external_url %}
       {% else %}
-      <img src="{{site.baseurl}}/assets/img/{{ page.image }}">
+      <img class="{{ page.slug }}" src="{{site.baseurl}}/assets/img/{{ page.image }}">
       {% endif %}
       <h1>{{ page.title }}</h1>
       <h3>{{ page.subtitle }}</h3>
