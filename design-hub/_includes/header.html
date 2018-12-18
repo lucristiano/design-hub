@@ -12,15 +12,15 @@
   <body id="{{ page.layout }}" class="{{ page.slug }} {{ page.layout }}">
 
     <nav>
-      {% if page.layout == 'post' %}
-        <a href="{{ site.url }}"><img src="{{ site.url }}/assets/img/logowhite.svg"></a>
-        <label for="toggle"><img src="{{ site.url }}/assets/img/navwhite.svg" class="nav-icon"></label>
-      {% else %}
+      <div class="sidebar">
+          {% if page.layout == 'post' %}
+          <a href="{{ site.url }}"><img src="{{ site.url }}/assets/img/logowhite.svg"></a>
+          {% else %}
         <a href="{{ site.url }}"><img src="{{ site.url }}/assets/img/logo.svg"></a>
-        <label for="toggle"><img src="{{ site.url }}/assets/img/nav.svg" class="nav-icon"></label>
-      {% endif %}
-      <input type="checkbox" id="toggle"/>
-
+        {% endif %}
+        <button class="nav-icon"><span></span></button>
+      </div>
+      
       <div class="menu">
         <div class="menu-title">
           <a href="{{ site.url }}"><span>Product Design</span></a>
@@ -29,3 +29,5 @@
         {% include navigation.html %}
       </div>
     </nav>
+
+    <div class="nav-fade"><span></span></div>

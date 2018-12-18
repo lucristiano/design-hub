@@ -1,23 +1,14 @@
 $(document).ready(function(){
-    var open = false;
-
     $('.nav-icon').click(function(){
-        open = !open;
-        
-        if(open) {
-        $(this).attr('src', '/assets/img/nav-close.svg');
-        } else {
-        $(this).attr('src', '/assets/img/nav.svg');
+        $('.menu').toggleClass('active');
+        $('.nav-icon').toggleClass('toggle');
+        $('.nav-fade').toggleClass('nav-fade-active');
+    })
+    $('body').on('click',function(event){
+        if(!$(event.target).is('.nav-icon')){
+          $('.menu').removeClass('active');
+          $('.nav-icon').removeClass('toggle');
+          $('.nav-fade').removeClass('nav-fade-active');
         }
-    });
-
-    $('#post .nav-icon').click(function(){
-        open = !open;
-        
-        if(open) {
-        $(this).attr('src', '/assets/img/nav-closewhite.svg');
-        } else {
-        $(this).attr('src', '/assets/img/navwhite.svg');
-        }
-    });
+     });
 });
